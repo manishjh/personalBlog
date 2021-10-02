@@ -2,7 +2,7 @@ use actix_web::get;
 
 #[get("")]
 async fn index() -> String {
-    format!("")
+    format!("404, invalid!")
 }
 
 #[get("/health")]
