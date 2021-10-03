@@ -1,5 +1,5 @@
 use crate::services;
-use actix_web::{dev::Server, guard, web, App, HttpResponse, HttpServer};
+use actix_web::{dev::Server, web, App, HttpServer};
 use std::{io::Error, net::TcpListener};
 pub fn run(listener: TcpListener) -> Result<Server, Error> {
     let server = HttpServer::new(move || {
